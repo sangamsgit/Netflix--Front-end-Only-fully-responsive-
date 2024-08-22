@@ -1067,7 +1067,7 @@ select{
 
 @media screen  and (min-height:800px) {
     .main {
-        height: 70vh;
+        height: 70vh; /*Made Changes*/
     }
 }
 @media screen  and (min-height: 1020px){
