@@ -1,0 +1,1086 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    scrollbar-color: red black;scrollbar-width: thin;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+::-webkit-scrollbar-thumb {
+    background-color: red; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Optional: Border around the thumb */
+}
+/* ::-webkit-scrollbar-track {
+    background-color: #e41818; Background color of the track */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+section{
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Main Section */
+.main{
+    background: url(bg.jpg);
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.main .bg-img {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top: 0;
+    opacity: 0.65;
+    position: absolute;
+    overflow-x: hidden;
+}
+/* .bg-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+/* .bgimg-border{
+    background: radial-gradient(11% 56% at 17% 50%, #461518 0%, transparent 100%), radial-gradient(11% 56% at 83% 50%, #461518 0%, transparent 100%);
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 10px;
+    width: 80vw;
+    /* position: relative; */
+    
+    /* z-index: 10; */
+}
+
+nav button{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0px 19px;
+    height: 37px;
+    text-align: center;
+    margin-top: 15px;
+    z-index: 9;
+    border: 1px solid red;
+    border-radius: 6px;
+    position: relative;
+}
+nav img{
+    height: 65px;
+    width: 250px;
+    z-index: 9;
+    position: relative;
+}
+
+.hero{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+}
+.hero> :nth-child(1){
+    font-size: 2.9rem;
+    font-weight: 900;
+    font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.hero> :nth-child(2){
+    color:white;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.hero> :nth-child(3){
+    color:white;
+    text-align: center;
+    font-size: 1.3rem;
+    white-space: wrap;
+}
+.email-box{
+     display: flex; 
+     justify-content: center; 
+    /* padding-top: 9px; */
+    position: relative;
+    z-index: 5;
+}
+
+input[type=email]{
+    padding: 16px 16px 16px;
+    width: 399px;
+    color: white;
+    margin-right: 7px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background-color: rgba(24, 22, 22, 0.726);
+    border: 1px solid lightslategray;
+    border-radius: 5px;    
+}
+::placeholder {
+    color: #e0e0e0ee;
+}
+button[type=submit]{
+    width: 199px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+button[type=submit] span{
+    padding-left: 10px;
+    font-size: 1.7rem;
+}
+button[type=submit] span svg{
+    margin: -5px 0;
+}
+
+/* .curved-line{
+    width: 100%;
+    border-top: 4.5px solid red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+} */
+
+.section1{
+    width: 100%;
+    /* height: 1500px; */
+    height: auto;
+    position: relative;
+    z-index: 15;
+    overflow-x: hidden;
+}
+.trending{
+    padding: 36px;
+    font-size: 1.4rem;
+    margin: 2px 147px;
+}
+.trending h3{
+    font-weight: bold;
+    color: white;
+}
+select{ 
+    width: 29%;
+    margin-top: 15px;
+    height: 37px;
+    background-color: rgba(24, 22, 22, 0.726);
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 9px;
+}
+.curved-line{
+    position: relative;
+    z-index: 15;
+    height: 77px;
+    width: 106vw;
+    margin-bottom: -45px;
+    margin-top: -45px;
+    margin-left: -50px;
+    margin-right: -39px;
+    border: solid 4.5px red;
+    border-color: red transparent transparent transparent;
+    border-radius: 55% / 100px 100px 0 0;
+    border-top-left-radius: 50% 110%;
+    border-top-right-radius: 50% 111%;
+
+    /* background: #4061e766; */
+}
+.lightning{
+    position: relative;
+    height: 78px;
+    /* border: solid .25rem transparent; */
+    border-radius: 50% / 100px 100px 0 0;
+    background: radial-gradient(50% 500% at 50% -420%, #4061e766 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+.movies-english {
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    max-width: 100%; /* Ensure container doesn't overflow the viewport */
+    position: relative; /* Change to relative */
+    margin: 15px auto;
+    gap: 1rem;
+    overflow: hidden; /* Change from scroll to hidden */
+    white-space: nowrap;
+}
+.img-card {
+    flex-shrink: 0; /* Prevent shrinking */
+    /* width: calc((100vw - 80px) / 3); Adjust width to prevent overflow */
+    margin-right: 1rem;
+    width:192px;
+}
+.movies-english img {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.left, .right {
+    width: 1.6%;
+    height: 102px;
+    font-size: 1.4rem;
+    margin: auto;
+    border: none;
+    border-radius: 14px;
+    color: grey;
+    background-color: rgba(24, 22, 22, 0.726);
+    position: absolute;
+    top: 61%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+.trending{
+    position: relative;
+    overflow: hidden;
+}
+.img-card img{
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+}
+.img-card img:hover,
+.img-card img:active
+{
+    transform: scale(1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for the pop effect */
+}
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Ensure positioning context for pseudo-element */
+    overflow: hidden; /* Ensure nothing overflows outside the card */
+    cursor: pointer;
+}
+
+.img-card::before {
+    content: attr(data-number); /* Use custom attribute for content */
+    position: absolute;
+    bottom: 24px; /* Position at the bottom */
+    left: -11px;   /* Position at the left */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+     /* Black background with transparency */
+    color: rgba(0, 0, 0, 0.925); /* Text color */
+    font-size: 5em; /* Adjust the size as needed */
+    font-weight: 700;
+    padding: 4px 8px; /* Add some padding */
+    border-radius: 5px; /* Optional: round corners */
+    font-weight: bold;
+    display: inline-block;
+    z-index: 10; /* Ensure it's on top of the image */
+    -webkit-text-stroke: 1px white; /* Apply stroke for webkit browsers */
+    text-shadow: 0 0 1.5rem rgb(234 43 43 / 50%);
+}
+
+.img-card:nth-child(1)::before { content: "1"; }
+.img-card:nth-child(2)::before { content: "2"; }
+.img-card:nth-child(3)::before { content: "3"; }
+.img-card:nth-child(4)::before { content: "4";left: -10px; }
+.img-card:nth-child(5)::before { content: "5"; }
+.img-card:nth-child(6)::before { content: "6"; }
+.img-card:nth-child(7)::before { content: "7"; }
+
+
+.reasons{
+    padding: 28px;
+    margin: 16px 147px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: calc(100% + 1rem);
+}
+.h2{
+    padding: 10px 36px;
+    margin: 16px 147px;
+    margin-bottom: -33px;
+}
+.res-card{
+    position: relative;
+    height: 323px;
+    width: 240px;
+    border: none;
+    background: linear-gradient(to bottom, #1b1f3f, #201322); 
+    border-radius: 14px;
+}
+.res-card h2{
+    position: absolute;
+    padding: 10px;
+    margin-left: 5px;
+    font-family: Segoe UI;
+    font-weight: 500;
+    font-size: 24px;
+    /* top: 5px; */
+}
+.res-card p{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    top: 25px;
+    font-family: Segoe UI;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+.res-card .card2p{
+    margin-top: 81px;
+}
+.res-card .card3p{
+    margin-top: 51px;
+}
+.res-card .card4p{
+    margin-top: 51px;
+}
+.res-card svg{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+::selection {
+    background-color: gray; 
+}
+
+.faq-container {
+    padding: 36px;
+    width: 84%;
+    margin: 0 147px;
+}
+
+.faq-item {
+    background: #2d2d2d;
+    border:none;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    overflow: visible;
+    width: 80%;
+    height: auto;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px;
+    cursor: pointer;
+    background: #2d2d2d;
+    color: #fff;
+    /* height: 74px; */
+}
+
+.faq-question h3 {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 24px;
+    font-family: Segoe UI ;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.plus-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #2d2d2d;
+    color: #fff;
+    border-top: 1px solid black;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-size: 24px;
+    font-family: Segoe UI ;
+    font-weight: 400;
+}
+
+
+.email-box .foot-email{
+    width: 60%;
+    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.em-m{
+    margin-left: 14px;
+}
+
+.email-head{  
+    position: relative;
+    margin: 0 182px;
+}
+
+.getstarted{
+    position: relative;
+    top: 5px;
+    height: 56px;
+}
+
+
+/* Footer Section */
+.foot-p{
+    position: absolute;
+    margin: 0 182px;
+    margin-top: -87px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.foot-p2{
+    position: absolute;
+    margin: 0 182px;
+    margin-top: -27px;
+    font-size: 0.95rem;
+}
+
+.foot-top{
+    font-size: 1rem;
+    margin: 0 176px;
+    /* padding: 14px; */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.useful-links{
+    font-family:'Segoe UI';
+    height: 450px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0px;
+}
+.links-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.links-box a{
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+.links-box a:hover{
+
+}
+#name{
+    color: #d63737;
+}
+
+
+/* Responsive */
+@media screen and (min-width:320px) and (max-width:420px) {
+    .hero> :nth-child(1) {
+        font-size: 2rem;
+        margin-top: -199px;
+        font-weight: 700;
+    }
+    .hero> :nth-child(2){
+        font-size: 1rem;
+    }
+    .hero> :nth-child(3){
+        font-size: 1rem;
+        white-space: wrap;
+        padding: 0 5px;
+    }
+    .curved-line{
+        width: 123vw;
+    }
+    nav img {
+        height: 51px;
+        width: 99px;
+        z-index: 9;
+        position: relative;
+        margin-left: -40px;
+    }
+    nav button {
+        padding: 2px 8px;
+        margin-top: 12px;
+        height: 23px;
+        margin-right: -30px;
+        font-weight: normal;
+        font-size: 0.65rem;
+        border: none;
+        border-radius: 2px;
+    }
+    
+    .email-box{
+        flex-direction: column;
+    }
+    input[type=email] {
+        position: relative;
+        padding: 3px 15px 16px;
+        width: 81%;
+        margin: 0 37px;
+    }
+    button[type=submit]{
+        margin-left: 86px;
+        margin-top: 5px;
+        height: 50px;
+    }
+
+    .trending {
+        padding: 12px;
+        font-size: 1.4rem;
+        margin: 2px 7px;
+    }
+
+    .trending h3 {
+        font-size: 20px;
+    }
+    .movies-english{
+        gap:0.2rem;
+    }
+    select {
+        width: 100%;
+    }
+    .img-card {
+        flex-shrink: 0;
+        margin-right: 1rem;
+        width: 122px;
+    }
+    .img-card::before {
+        bottom: 3px;
+        left: -11px;
+        font-size: 2.9em;
+    }
+
+    .h2 {
+        padding: 9px 12px;
+        margin: 16px 7px;
+        margin-bottom: -33px;
+        font-size: 20px;
+    }
+    .reasons{
+        margin: 16px -5px;
+    }
+    /* .res-card{
+        height: 241px;
+        width: 333px;
+    } */
+    .res-card{
+        flex: 0 0 96%; /* Takes up approximately 48% of the container's width */
+        margin-bottom: 10px;/* Optional: Adds space between rows */
+        height: 248px;
+        /* width: 200px; */
+        padding: 1.5rem 1.5rem 6rem 1.5rem;
+    }   
+    .res-card .card2p, .res-card .card3p, .res-card .card4p {
+        padding: 0;
+    }
+    .res-card h2{
+        padding: 0;
+    }
+    .res-card .card2p {
+        margin-top: 46px;
+    }
+    .faq-container {
+        padding: 0px;
+        width: 115%;
+        margin: 65px 17px;
+    }
+    .email-head {
+        position: relative;
+        margin: 0 17px;
+    }
+    .email-box .foot-email{
+        width: 96%;
+        margin: 15px 0;
+    }
+    .getstarted {
+        position: relative;
+        top: 0px;
+        left: -86px;
+        margin-bottom: 10px;
+    }
+    .foot-top {
+        font-size: 1rem;
+        margin: 0 23px;
+        padding: 14px;
+    }
+    .useful-links{
+        padding: 25px 18px;
+    }
+    .links-box a {
+        font-size: 0.6rem;
+    }
+    
+    .foot-p {
+        position: absolute;
+        margin: 0 34px;
+        margin-top: -175px;
+    }
+    .foot-p2 {
+        position: absolute;
+        margin: 0 35px;
+        margin-top: -27px;
+        font-size: 0.95rem;
+    }
+    
+}
+
+
+@media screen and (min-width:421px) and (max-width:576px) {
+    .hero> :nth-child(1) {
+        font-size: 2rem;
+        margin-top: -199px;
+        font-weight: 700;
+    }
+    .hero> :nth-child(2){
+        font-size: 1rem;
+    }
+    .hero> :nth-child(3){
+        font-size: 1rem;
+        white-space: wrap;
+        padding: 0 5px;
+    }
+    .curved-line{
+        width: 123vw;
+    }
+    nav img {
+        height: 51px;
+        width: 99px;
+        z-index: 9;
+        position: relative;
+        margin-left: -40px;
+    }
+    nav button {
+        padding: 2px 8px;
+        margin-top: 12px;
+        height: 23px;
+        margin-right: -30px;
+        font-weight: normal;
+        font-size: 0.65rem;
+        border: none;
+        border-radius: 2px;
+    }
+    
+    .email-box{
+        flex-direction: column;
+    }
+    input[type=email] {
+        position: relative;
+        padding: 3px 15px 16px;
+        width: 81%;
+        margin: 0 37px;
+    }
+    button[type=submit]{
+        margin-left: 134px;
+        margin-top: 5px;
+        height: 50px;
+    }
+    .email-box .foot-email {
+        width: 81%;
+        margin-left: 47px;
+        padding: 7px;
+    }
+    .getstarted {
+        position: relative;
+        top: 0px;
+        left: -86px;
+        margin-bottom: 10px;
+    }
+    .em-m {
+        margin-top: 10px;
+        margin-left: -12px;
+    }
+    .email-head{
+        margin: 0 36px;
+    }
+    .trending{
+        margin: 2px 7px;
+    }
+    .img-card {
+        flex-shrink: 0;
+        margin-right: 1rem;
+        width: 122px;
+    }
+    .img-card::before {
+        bottom: 3px;
+        left: -11px;
+        font-size: 2.9em;
+    }
+
+    .reasons{
+        margin: 16px 7px;
+    }
+    .res-card{
+        flex: 0 0 96%; /* Takes up approximately 48% of the container's width */
+        margin-bottom: 10px;/* Optional: Adds space between rows */
+        height: 248px;
+        /* width: 200px; */
+        padding: 1.5rem 1.5rem 6rem 1.5rem;
+    }   
+    .res-card .card2p, .res-card .card3p, .res-card .card4p {
+        padding: 0;
+    }
+    .res-card h2{
+        padding: 0;
+    }
+    .res-card .card2p {
+        margin-top: 46px;
+    }
+    .h2{
+        margin: -16px 7px;
+    }
+    .faq-container{
+        margin: 0;
+        width: 120%;
+    }
+    .res-card{
+        height: 220px;
+    }
+    .foot-top {
+        margin: 0 43px;
+    }
+    .useful-links{
+        padding: 25px 18px;
+    }
+    .links-box a {
+        font-size: 0.6rem;
+    }
+    .foot-p {
+        margin: -127px 40px;
+    }
+    .foot-p2 {
+        position: absolute;
+        margin: 0 33px;
+        margin-top: -27px;
+    }
+}
+
+
+@media screen and (min-width:575px) and (max-width:959px) {
+    .hero> :nth-child(1) {
+        font-size: 2rem;
+        padding: 0px 23px;
+        white-space: wrap;
+    }
+    .hero{
+        margin-top: -104px;
+    }
+    input[type=email] {
+        padding: 16px 16px 16px;
+        width: 268px;
+    }
+    .hero> :nth-child(3) {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        white-space: wrap;
+    }
+    .curved-line{
+        width: 112vw;
+    }
+    nav img {
+        height: 51px;
+        width: 122px;
+        z-index: 9;
+        position: relative;
+        margin-left: -40px;
+    }
+    nav button {
+        padding: 2px 10px;
+        margin-top: 12px;
+        height: 30px;
+        margin-right: -30px;
+        font-weight: normal;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 2px;
+    }
+    
+    .trending {
+        padding: 36px;
+        font-size: 1.4rem;
+        margin: 2px 6px;
+    }
+
+    .img-card {
+        flex-shrink: 0;
+        margin-right: 1rem;
+        width: 101px;
+    }
+    .img-card::before {
+        bottom: 3px;
+        left: -11px;
+        font-size: 2.9em;
+    }
+    select{
+        width: 100%;
+    }
+    .left, .right {
+        font-size: 1rem;
+        color: grey;
+    }
+    .reasons{
+        margin: 16px 6px;
+    }
+    .res-card{
+        flex: 0 0 96%; /* Takes up approximately 48% of the container's width */
+        margin-bottom: 10px;/* Optional: Adds space between rows */
+        height: 199px;
+        /* width: 200px; */
+        padding: 1.5rem 1.5rem 6rem 1.5rem;
+    } 
+    .h2 {
+        margin: 16px 4px;
+        margin-bottom: -33px;
+    }
+    .res-card .card2p, .res-card .card3p, .res-card .card4p {
+        padding: 0;
+        margin: 26px 0;
+    }
+    .res-card h2{
+        padding: 0;
+    }
+
+     .faq-container {
+        width: 124%;
+        margin: 0;
+     }
+     .email-box .foot-email {
+        width: 72%;
+    }
+    .email-head {
+        margin: 5px 0;
+        margin-left: 39px;
+    }
+    .em-m {
+        margin-left: 38px;
+    }
+    .email-box{
+        width: 91%;
+    }
+    .foot-top{
+        margin-left: 54px;
+    }
+    .useful-links{
+        padding: 25px 0;
+    }
+    .foot-p{
+        margin: 0 60px;
+        margin-top: -164px;
+    }
+    .foot-p2{
+        margin: 0 59px;
+    }
+}
+
+
+@media screen and (min-width:960px) and (max-width: 1279px)   {
+    nav img {
+        height: 63px;
+        width: 169px;
+        z-index: 9;
+        position: relative;
+        margin-left: -40px;
+    }
+    .reasons{
+        margin-top: -0.75rem;
+        width: calc(95% + 1rem);
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .res-card{
+        flex: 0 0 48%; /* Takes up approximately 48% of the container's width */
+        margin-bottom: 10px; /* Optional: Adds space between rows */
+        height: 229px;
+        /* width: 200px; */
+        padding: 1.5rem 1.5rem 6rem 1.5rem;
+    }
+    .res-card .card2p,
+    .res-card .card3p,
+    .res-card .card4p{
+        margin-top: 31px;
+        padding: 19px;
+    }
+    .trending{
+        padding: 36px;
+        font-size: 1.4rem;
+        margin: 2px 47px;
+    }
+    .curved-line{
+        width: 114vw;
+    }
+    .reasons{
+        padding: 28px;
+        margin: 16px 47px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .h2{
+        padding: 10px 36px;
+        margin: 16px 47px;
+        margin-bottom: -33px;
+    }
+    .faq-container {
+        padding: 36px;
+        width: 86%;
+        margin: 0 47px;
+    }
+    .foot-p{
+        margin:-63px 87px;
+    }
+    .foot-p2{
+        position: absolute;
+        margin: 0 84px;
+        margin-top: -27px;
+    }
+
+    .foot-top{
+        margin: 0 104px;
+        /* padding: 14px; */
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .email-head{
+        margin: 0 83px;
+    }
+    .em-m{
+        margin-left: -78px;
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .curved-line{
+        width: 108vw;
+    }
+    .em-m {
+        margin-left: -8px;
+    }
+    .foot-top{
+        margin-left: 192px;
+    }
+    .email-box .foot-email {
+        width: 55%;
+    }
+    .useful-links{
+        padding: 25px 68px;
+    }
+}
+
+@media screen and (min-width:1299px) {
+    .em-m {
+        margin-left: -48px;
+    }
+}
+@media screen and (min-width:1449px) {
+    .em-m {
+        margin-left: -108px;
+    }
+}
+
+
+
+/* Responsive Heights */
+@media screen and (min-height: 300px) and (max-height: 400px){
+    .main .bg-img{
+        height: 164vh;
+    }
+    .main{
+        height: 164vh;
+    }
+    .curved-line{
+        width: 119vw;
+    }
+}
+@media screen and (min-height: 400px) and (max-height: 500px){
+    .main .bg-img{
+        height: 171vh;
+    }
+    .main{
+        height: 140vh;
+    }
+}
+@media screen and (min-height:500px) and (max-height:600px) {
+    .main{
+        height:111vh;
+    }
+
+}
+@media screen and (min-height: 600px) and (max-height: 700px){
+    .main{
+        height: 100vh;
+    }
+    /* .curved-line{
+        width: 123vw;
+    } */
+}
+@media screen and (min-height: 702px) and (max-height: 800px){
+    .main{
+        height: 88vh;
+    }
+    .curved-line{
+        width: 114vw;
+    }
+}
+
+
+
+/* @media screen  and (min-height:720px) and (max-height: 700px){
+    .main {
+        height: 88vh;
+    }
+
+} */
+
+@media screen  and (min-height:800px) {
+    .main {
+        height: 74vh;
+    }
+}
+@media screen  and (min-height: 1020px){
+    .main{
+        height: 50vh;
+    }   
+}
+@media screen and (min-width:966px) {
+    /* .reasons{
+        margin-top: -0.75rem;
+        width: calc(79% + 1rem);
+    } */
+
+}
+
+
